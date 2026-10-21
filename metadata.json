@@ -1,0 +1,8 @@
+{
+  "name": "Cerro Dublín — Sitio Oficial",
+  "description": "Sitio oficial de Cerro Dublín. Escuchá el nuevo álbum '7:28PM / PAUSA', fechas de shows en vivo, discografía completa y videoclips.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

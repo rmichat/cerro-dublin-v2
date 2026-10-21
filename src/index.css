@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cerro-red: #B32B2B;
+    --color-cerro-crimson: #C43737;
+  }
+
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  /* Disciplina visual brutalista - bordes afilados sin radio */
+  button, input, select, textarea {
+    border-radius: 0px !important;
+  }
+}
+
+/* Berthold Akzidenz Bold / Heavy Extended */
+.font-akzidenz {
+  font-family: 'Archivo', 'Syne', system-ui, -apple-system, sans-serif;
+  font-stretch: 125%;
+  font-variation-settings: 'wdth' 125, 'wght' 800;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+}
+
+.font-akzidenz-heavy {
+  font-family: 'Archivo', 'Syne', system-ui, -apple-system, sans-serif;
+  font-stretch: 125%;
+  font-variation-settings: 'wdth' 125, 'wght' 900;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+/* Berthold Akzidenz Medium Extended */
+.font-akzidenz-medium {
+  font-family: 'Archivo', 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  font-stretch: 125%;
+  font-variation-settings: 'wdth' 125, 'wght' 500;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Marquesina de desplazamiento continuo */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-infinite {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 24s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-infinite:hover {
+  animation-play-state: paused;
+}
+
+/* Barra de desplazamiento personalizada */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B32B2B;
+}
