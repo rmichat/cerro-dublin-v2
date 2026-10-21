@@ -49,13 +49,13 @@ export const Hero: React.FC = () => {
             7:28PM / PAUSA
           </h1>
 
-          {/* Botón compacto de Reproducir que redirige a YouTube */}
+          {/* Botón compacto de Reproducir que redirige a Spotify */}
           <a
-            href="https://youtu.be/O3iLOASqlNY"
+            href="https://open.spotify.com/album/7s6FiCbB9XP2XeuiDXWUM0"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 sm:px-5 py-2 bg-[#B32B2B] hover:bg-[#C43737] text-white font-akzidenz text-[11px] sm:text-xs tracking-widest uppercase transition-all duration-150 border-2 border-black hover:scale-105 active:scale-95 cursor-pointer shadow-lg inline-flex items-center gap-2"
-            title="Escuchar 7:28PM / PAUSA en YouTube"
+            title="Escuchar 7:28PM / PAUSA en Spotify"
           >
             <Play className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" />
             <span>REPRODUCIR</span>
